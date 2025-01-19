@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Center everything on the page */
+body {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;     /* Centers content vertically */
+  min-height: 100vh;       /* Ensures content takes up full viewport height */
+  margin: 0;               /* Removes default margin */
+  background-color: #f0f0f0; /* Optional: Add background color */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Container for the entire gallery */
+.gallery-container {
+  text-align: center; /* Centers all text and inline content */
+  padding: 20px;
+  width: 90%; /* Adjust the width of the gallery */
+  max-width: 1200px; /* Optional: Limit the width for large screens */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Main title styling */
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 40px; /* Ensures space between title and first group */
+}
+
+/* Individual group container */
+.group-container {
+  margin-bottom: 40px;
+}
+
+/* Group title styling */
+.group-title {
+  font-size: 1.5rem;
+  margin-top: 40px; /* Pushes the title down to its own line */
+  margin-bottom: 20px; /* Adds space between title and images */
+}
+
+/* Image row container */
+.image-row {
+  display: flex;
+  justify-content: center; /* Centers images horizontally */
+  flex-wrap: wrap; /* Wraps images to the next line if needed */
+  gap: 20px; /* Adds space between images */
+}
+
+/* Individual image styling */
+.image {
+  width: 100%; /* Makes image responsive */
+  max-width: 250px; /* Maximum width for each image */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Responsive Layout: More images per row on larger screens */
+@media (min-width: 768px) {
+  .image {
+    width: 48%; /* 2 images per row on medium screens */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1024px) {
+  .image {
+    width: 23%; /* 4 images per row on larger screens */
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
