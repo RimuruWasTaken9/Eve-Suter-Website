@@ -1,27 +1,21 @@
 import React from "react";
-import { seasonalImages } from "./assets/imageURLs.js";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="gallery-container">
-      <h1 className="main-title">Eve Suter's Portfolio</h1>
-      {seasonalImages.map((group, groupIndex) => (
-        <div key={groupIndex} className="group-container">
-          <h2 className="group-title">{group.title}</h2>
-          <div className="image-row">
-            {group.images.map((url, index) => (
-              <img
-                key={index}
-                src={url}
-                alt={`Artwork ${groupIndex + 1}-${index + 1}`}
-                className="image"
-              />
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Contact" element={<Contact />} />
+
+    </Routes>
+    </>
   );
 }
 
