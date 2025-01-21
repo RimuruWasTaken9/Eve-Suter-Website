@@ -1,5 +1,5 @@
 
-const imageGroups = [
+export const seasonalImages = [
 {
     title: "Fall",
     images: [
@@ -19,15 +19,6 @@ const imageGroups = [
     ],
 },
 {
-    title: "Summer",
-    images: [
-"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer3_rj4xxx.jpg",
-"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer2_bxlpyu.jpg",
-"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer1_bnlmcb.jpg",
-"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer4_dougzf.jpg",
-    ],
-},
-{
     title: "Spring",
     images: [
 "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/spring1_zngksm.jpg",
@@ -36,6 +27,23 @@ const imageGroups = [
 "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/spring3_aihng7.jpg"
     ],
 },
+{
+    title: "Summer",
+    images: [
+"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer3_rj4xxx.jpg",
+"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer2_bxlpyu.jpg",
+"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer1_bnlmcb.jpg",
+"https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/summer4_dougzf.jpg",
+    ],
+},
+
 ];
 
-export default imageGroups;
+
+export const miscImages = [
+    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241795/contact_mbazpt.jpg",
+    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg",
+    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
+    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg",
+    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/profile_image_z72hpr.jpg",
+]

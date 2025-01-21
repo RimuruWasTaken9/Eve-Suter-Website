@@ -1,12 +1,12 @@
 import React from "react";
-import imageGroups from "./assets/imageURLs.js";
+import { seasonalImages } from "./assets/imageURLs.js";
 import "./App.css";
 
 function App() {
   return (
     <div className="gallery-container">
       <h1 className="main-title">Eve Suter's Portfolio</h1>
-      {imageGroups.map((group, groupIndex) => (
+      {seasonalImages.map((group, groupIndex) => (
         <div key={groupIndex} className="group-container">
           <h2 className="group-title">{group.title}</h2>
           <div className="image-row">
