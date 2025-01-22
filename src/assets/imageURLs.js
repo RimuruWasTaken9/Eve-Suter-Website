@@ -1,3 +1,4 @@
+import { image } from "@cloudinary/url-gen/qualifiers/source";
 
 export const seasonalImages = [
 {
@@ -40,10 +41,17 @@ export const seasonalImages = [
 ];
 
 
-export const miscImages = [
-    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241795/contact_mbazpt.jpg",
-    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg",
-    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
-    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg",
-    "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/profile_image_z72hpr.jpg",
-]
+export const contactImages = {
+    logo: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241795/contact_mbazpt.jpg",
+    sideImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
+    }
+
+export const homeImages = {
+    logo: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
+    logoWOText: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg",
+    sideImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg",
+}
+
+export const profileImages = {
+    profileImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/profile_image_z72hpr.jpg",
+}

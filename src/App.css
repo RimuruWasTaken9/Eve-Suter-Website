@@ -4,8 +4,7 @@ body {
   justify-content: center; /* Centers content horizontally */
   align-items: center;     /* Centers content vertically */
   min-height: 100vh;       /* Ensures content takes up full viewport height */
-  margin: 0;               /* Removes default margin */
-  background-color: #f0f0f0; /* Optional: Add background color */
+                 /* Removes default margin */
 }
 
 /* Container for the entire gallery */
@@ -18,8 +17,7 @@ body {
 
 /* Main title styling */
 .main-title {
-  font-size: 2rem;
-  margin-bottom: 40px; /* Ensures space between title and first group */
+  margin-bottom: var(--margin-42xl);
 }
 
 /* Individual group container */
@@ -29,9 +27,10 @@ body {
 
 /* Group title styling */
 .group-title {
-  font-size: 1.5rem;
+  color: var(--gray30);
   margin-top: 40px; /* Pushes the title down to its own line */
   margin-bottom: 20px; /* Adds space between title and images */
+  
 }
 
 /* Image row container */
@@ -62,4 +61,32 @@ body {
   .image {
     width: 23%; /* 4 images per row on larger screens */
   }
+}
+
+.break { margin-bottom: var(--margin-xl);}
+
+#title1 {
+  color: var(--gray10);
+  margin-top: var(--margin-xxs);
+  margin-bottom: var(--margin-s);
+}
+
+#title2 {
+  color: var(--gray10);
+  margin: var(--margin-s);
+}
+
+#title3 {
+  color: var(--gray10);
+  margin: var(--margin-s);
+}
+
+#title4 {
+  color: var(--gray10);
+  margin: var(--margin-s);
+}
+
+#title5 {
+  color: var(--gray10);
+  margin: var(--margin-s);
 }
