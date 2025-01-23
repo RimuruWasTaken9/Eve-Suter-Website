@@ -90,3 +90,18 @@ body {
   color: var(--gray10);
   margin: var(--margin-s);
 }
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.textButton-container {
+  margin-top: var(--margin-3xl);
+  color: var(--gray70);
+}
+
+.textButton-container p {
+  margin: var(--margin-xl);
+}
