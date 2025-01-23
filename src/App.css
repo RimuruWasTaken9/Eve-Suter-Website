@@ -93,8 +93,7 @@ body {
 
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 5fr 6fr;
 }
 
 .textButton-container {
