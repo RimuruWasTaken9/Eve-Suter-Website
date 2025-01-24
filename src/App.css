@@ -1,8 +1,13 @@
 /* Center everything on the page */
+.App {
+  margin: var(--margin-xl);
+  max-width: 1500px;
+}
+
 body {
   display: flex;
   justify-content: center; /* Centers content horizontally */
-  align-items: center;     /* Centers content vertically */
+  align-items: flex-start;     /* Centers content vertically */
   min-height: 100vh;       /* Ensures content takes up full viewport height */
                  /* Removes default margin */
 }
@@ -63,35 +68,9 @@ body {
   }
 }
 
-.break { margin-bottom: var(--margin-xl);}
-
-#title1 {
-  color: var(--gray10);
-  margin-top: var(--margin-xxs);
-  margin-bottom: var(--margin-s);
-}
-
-#title2 {
-  color: var(--gray10);
-  margin: var(--margin-s);
-}
-
-#title3 {
-  color: var(--gray10);
-  margin: var(--margin-s);
-}
-
-#title4 {
-  color: var(--gray10);
-  margin: var(--margin-s);
-}
-
-#title5 {
-  color: var(--gray10);
-  margin: var(--margin-s);
-}
 
 .home-container {
+  margin-top: var(--margin-xxs);
   display: grid;
   grid-template-columns: 5fr 6fr;
 }
@@ -101,6 +80,35 @@ body {
   color: var(--gray70);
 }
 
-.textButton-container p {
-  margin: var(--margin-xl);
+.textButton-container a {
+  display: block;
+  margin-top: var(--margin-xl);
+  margin-bottom: var(--margin-xl);
 }
+.textButton-container p {
+  margin-top: var(--margin-xl);
+  margin-bottom: var(--margin-xl);
+  padding-left: 0;
+}
+
+.textButton-container a:hover {
+  color: var(--colorb);
+ 
+  cursor: pointer;
+}
+
+/* only for updated code */
+/* a p{
+  background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.1em
+    no-repeat;
+ 
+  padding: 0 .5em 0.2em;
+  text-decoration: none;
+  transition: background-size 0.5s;
+}
+
+a:hover p{
+  --underline-width: 100%;
+} */

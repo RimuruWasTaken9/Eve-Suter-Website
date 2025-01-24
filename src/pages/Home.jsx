@@ -1,53 +1,50 @@
 import { color } from "@cloudinary/url-gen/qualifiers/background";
-import { seasonalImages, homeImages } from "../assets/imageURLs.js";
+import { buttonImages, homeImages } from "../assets/imageURLs.js";
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import "../index.css";
 
 
 function Home() {
 
-    const logoIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg";
-    const logoWOTextIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg";
-    const sideIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg";
+
     return (
-        <div>
-          {/* <div>
-            
-              <img src={homeImages.logo} alt="Logo" className="logo" />
-            
-            <img src={homeImages.sideImage} alt="Side Image" className="sideImage" />
-        
-          </div> */}
+        <div className="App flex flex-col">
+  
         <div className="home-container">
           <div>
             <div>
+              <p className="text-green-600">test</p>
               <img src={homeImages.logo} height={95} alt="Logo" className="logo" />
             </div>
             <div className="textButton-container">
-              <p>profile</p>  
+             <Link to="/About" className="pageLink" onMouseOver={e => (e.target.src = buttonImages.profileButtonB)} onMouseOut={e => (e.target.src = buttonImages.profileButtonA)}>
+             {<img src={buttonImages.profileButtonA} height={30} alt="Logo" className="logo" /> }
+             </Link> 
+       
+             <Link to="/Works" className="pageLink" onMouseOver={e => (e.target.src = buttonImages.winterButtonB)} onMouseOut={e => (e.target.src = buttonImages.winterButtonA)}>
+             {<img src={buttonImages.winterButtonA} height={30} alt="Logo" className="logo" /> }
+             </Link> 
 
-              <p>winter</p>
+             <Link to="/Works" className="pageLink" onMouseOver={e => (e.target.src = buttonImages.springButtonB)} onMouseOut={e => (e.target.src = buttonImages.springButtonA)}>
+             {<img src={buttonImages.springButtonA} height={30} alt="Logo" className="logo" /> }
+             </Link> 
 
-              <p>spring</p>  
+             <Link to="/Works" className="pageLink" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
+             {<img src={buttonImages.fallButtonA} height={30} alt="Logo" className="logo" /> }
+             </Link>
 
-              <p>summer</p>
+             <Link to="/Works" className="pageLink" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
+             {<img src={buttonImages.summerButtonA} height={30} alt="Logo" className="logo" /> }
+             </Link>  
 
-              <p>fall</p>  
-              <p>contact</p>
+             <Link to="/Contact" className="pageLink" onMouseOver={e => (e.target.src = buttonImages.contactButtonB)} onMouseOut={e => (e.target.src = buttonImages.contactButtonA)}>
+             {<img src={buttonImages.contactButtonA} height={30} alt="Logo" className="logo" /> }
+             </Link>
             </div>  
           </div>
           <img src={homeImages.sideImage} height={600} alt="Side Image" className="sideImage" />
         </div>
-         
-         <br />
-        
-      
-      <hr className="break"/>
-      <Link to="/About" >About page</Link>
-      <br />
-      <Link to="/Contact" >Contact page</Link>
-      <br />
-      <Link to="/Works" >Works page</Link>
       </div>
     );
   }

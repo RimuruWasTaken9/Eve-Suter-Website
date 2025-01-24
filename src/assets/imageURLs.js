@@ -55,3 +55,21 @@ export const homeImages = {
 export const profileImages = {
     profileImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/profile_image_z72hpr.jpg",
 }
+export const buttonImages = {
+    fallButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_fal_a_id9wic.jpg",
+    fallButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_fal_b_cbfpgv.jpg",
+    winterButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670666/btn_h_win_a_xjcvnb.jpg",
+    winterButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670666/btn_h_win_b_c1bods.jpg",
+    springButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_spr_a_lr9ntw.jpg",
+    springButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_spr_b_nsnede.jpg",
+    summerButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_sum_a_cakd9x.jpg",
+    summerButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_sum_b_cqxxlm.jpg",
+    profileButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_pro_a_qrobn9.jpg",
+    profileButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_pro_b_ggcpvl.jpg",
+    contactButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_con_a_zfhm6d.jpg",
+    contactButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_con_b_w7q7qm.jpg",
+    homeButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_home_a_vcg5oe.jpg",
+    homeButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_home_b_zri6yi.jpg",
+    pictureButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_sq_a_lww01q.jpg",
+    pictureButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_sq_b_upvvoh.jpg",
+}
