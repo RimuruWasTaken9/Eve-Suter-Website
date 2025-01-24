@@ -30,12 +30,12 @@ function Home() {
              {<img src={buttonImages.springButtonA} height={30} alt="Logo" className="logo" /> }
              </Link> 
 
-             <Link to="/Works" className="mt-7 mb-7 block" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
-             {<img src={buttonImages.fallButtonA} height={30} alt="Logo" className="logo" /> }
+             <Link to="/Works" className="mt-7 mb-7 block" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
+             {<img src={buttonImages.summerButtonA} height={30} alt="Logo" className="logo" /> }
              </Link>
 
-             <Link to="/Home2" className="mt-7 mb-7 block" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
-             {<img src={buttonImages.summerButtonA} height={30} alt="Logo" className="logo" /> }
+             <Link to="/Home2" className="mt-7 mb-7 block" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
+             {<img src={buttonImages.fallButtonA} height={30} alt="Logo" className="logo" /> }
              </Link>  
 
              <Link to="/Contact" className="mt-7 mb-7 block" onMouseOver={e => (e.target.src = buttonImages.contactButtonB)} onMouseOut={e => (e.target.src = buttonImages.contactButtonA)}>
