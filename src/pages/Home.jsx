@@ -14,7 +14,7 @@ function Home() {
         <div className="home-container">
           <div>
             <div>
-              <p className="text-green-600">test</p>
+             
               <img src={homeImages.logo} height={95} alt="Logo" className="logo" />
             </div>
             <div className="textButton-container">
