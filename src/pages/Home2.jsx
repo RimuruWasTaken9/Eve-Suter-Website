@@ -10,14 +10,14 @@ function Home() {
     const logoWOTextIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg";
     const sideIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg";
     return (
-        <div className="App">
+        <div className="flex flex-col mt-7 min-h-screen content-center items-center max-w-375">
   
-        <div className="home-container">
+        <div className="mt-1 grid grid-cols-[5fr_6fr]">
           <div>
             <div>
               <img src={homeImages.logo} height={95} alt="Logo" className="logo" />
             </div>
-            <div className="textButton-container">
+            <div className="textButton-container mt-15 text-gray-600">
              <Link to="/About" className="pageLink" ><p>profile</p></Link> 
        
 

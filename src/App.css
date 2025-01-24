@@ -1,56 +1,7 @@
 
 
-
-
-
-
-
-
-/* Group title styling */
-.group-title {
-  color: var(--gray30);
-  margin-top: 40px; /* Pushes the title down to its own line */
-  margin-bottom: 20px; /* Adds space between title and images */
-  
-}
-
-/* Image row container */
-.image-row {
-  display: flex;
-  justify-content: center; /* Centers images horizontally */
-  flex-wrap: wrap; /* Wraps images to the next line if needed */
-  gap: 20px; /* Adds space between images */
-}
-
-/* Individual image styling */
-.image {
-  width: 100%; /* Makes image responsive */
-  max-width: 250px; /* Maximum width for each image */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
-}
-
-/* Responsive Layout: More images per row on larger screens */
-@media (min-width: 768px) {
-  .image {
-    width: 48%; /* 2 images per row on medium screens */
-  }
-}
-
-@media (min-width: 1024px) {
-  .image {
-    width: 23%; /* 4 images per row on larger screens */
-  }
-}
-
-
-.home-container {
-  margin-top: var(--margin-xxs);
-  display: grid;
-  grid-template-columns: 5fr 6fr;
-}
-
+/* only for updated code */
+/*
 .textButton-container {
   margin-top: var(--margin-3xl);
   color: var(--gray70);
@@ -73,8 +24,8 @@
   cursor: pointer;
 }
 
-/* only for updated code */
-/* a p{
+
+a p{
   background: linear-gradient(currentColor 0 0) 
     bottom left/
     var(--underline-width, 0%) 0.1em
