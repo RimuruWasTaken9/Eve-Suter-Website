@@ -1,34 +1,10 @@
-/* Center everything on the page */
-.App {
-  margin: var(--margin-xl);
-  max-width: 1500px;
-}
 
-body {
-  display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: flex-start;     /* Centers content vertically */
-  min-height: 100vh;       /* Ensures content takes up full viewport height */
-                 /* Removes default margin */
-}
 
-/* Container for the entire gallery */
-.gallery-container {
-  text-align: center; /* Centers all text and inline content */
-  padding: 20px;
-  width: 90%; /* Adjust the width of the gallery */
-  max-width: 1200px; /* Optional: Limit the width for large screens */
-}
 
-/* Main title styling */
-.main-title {
-  margin-bottom: var(--margin-42xl);
-}
 
-/* Individual group container */
-.group-container {
-  margin-bottom: 40px;
-}
+
+
+
 
 /* Group title styling */
 .group-title {

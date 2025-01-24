@@ -9,7 +9,7 @@ function Home() {
 
 
     return (
-        <div className="App flex flex-col">
+        <div className="flex flex-col mt-7 min-h-screen content-center items-center max-w-375">
   
         <div className="home-container">
           <div>
