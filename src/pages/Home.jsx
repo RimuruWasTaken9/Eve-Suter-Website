@@ -9,7 +9,7 @@ function Home() {
 
 
     return (
-        <div className="flex flex-col mt-7 min-h-screen content-center items-center max-w-375">
+        <div className="flex  flex-col mt-7 min-h-screen content-center items-center max-w-375">
   
         <div className="mt-1 grid grid-cols-[5fr_6fr]">
           <div>

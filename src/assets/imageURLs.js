@@ -54,6 +54,7 @@ export const homeImages = {
 
 export const profileImages = {
     profileImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/profile_image_z72hpr.jpg",
+    nameImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/name_amxxjd.jpg",
 }
 export const buttonImages = {
     fallButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670665/btn_h_fal_a_id9wic.jpg",
