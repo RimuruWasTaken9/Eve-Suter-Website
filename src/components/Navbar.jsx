@@ -19,7 +19,7 @@ function Navbar() {
              </Link> 
              
              {location.pathname === "/About" ? <img src={buttonImages.profileButtonB}  alt="Logo" className="mt-7 mb-7 h-[20px] w-[70px]" /> :
-             <Link to="/About" className="mt-7 mb-7 ">
+             <Link to="/About" className="mt-7 mb-7 " onMouseOver={e => (e.target.src = buttonImages.profileButtonB)} onMouseOut={e => (e.target.src = buttonImages.profileButtonA)}>
              {<img src={buttonImages.profileButtonA}  alt="Logo" className="h-[20px] w-[70px] " /> }
              </Link> }
              

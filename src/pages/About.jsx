@@ -1,11 +1,11 @@
-import {  buttonImages, profileImages } from "../assets/imageURLs.js";
-import { Link, NavLink } from "react-router-dom";
+import Navbar from "@/components/Navbar";
+import { profileImages } from "../assets/imageURLs.js";
 
 function About() {
     return (
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
         <div >
-          <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-6 pb-5 self-start" />
+          <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-7 pb-6 self-start" />
         
         <div className="mt-1 grid grid-cols-[350px_1fr] gap-25">
           <div className="">
@@ -34,35 +34,7 @@ function About() {
           </div>
         <img src={profileImages.profileImage}  alt="Logo" className="w-max h-max" />
         </div>
-        <div className="pt-5 pl-3 grid grid-cols-7 min-w-[525px]">
-             <Link to="/Home" className="mt-7 mb-7 " onMouseOver={e => (e.target.src = buttonImages.homeButtonB)} onMouseOut={e => (e.target.src = buttonImages.homeButtonA)}>
-             {<img src={buttonImages.homeButtonA}  alt="Logo" className="h-[20px] w-[70px] m-2"/> }
-             </Link> 
-
-             <Link to="/About" className="mt-7 mb-7 " onMouseOver={e => (e.target.src = buttonImages.profileButtonB)} onMouseOut={e => (e.target.src = buttonImages.profileButtonA)}>
-             {<img src={buttonImages.profileButtonA}  alt="Logo" className="h-[20px] w-[70px] m-2" /> }
-             </Link> 
-       
-             <Link to="/Works" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.winterButtonB)} onMouseOut={e => (e.target.src = buttonImages.winterButtonA)}>
-             {<img src={buttonImages.winterButtonA}  alt="Logo" className="h-[20px] w-[70px] m-2" /> }
-             </Link> 
-
-             <Link to="/Works" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.springButtonB)} onMouseOut={e => (e.target.src = buttonImages.springButtonA)}>
-             {<img src={buttonImages.springButtonA}  alt="Logo" className="h-[20px] w-[70px] m-2" /> }
-             </Link> 
-
-             <Link to="/Home2" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
-             {<img src={buttonImages.summerButtonA}  alt="Logo" className="h-[20px] w-[70px] m-2" /> }
-             </Link>  
-
-             <Link to="/Works" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
-             {<img src={buttonImages.fallButtonA}  alt="Logo" className="m-2 h-[20px]" /> }
-             </Link>
-
-             <Link to="/Contact" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.contactButtonB)} onMouseOut={e => (e.target.src = buttonImages.contactButtonA)}>
-             {<img src={buttonImages.contactButtonA} alt="Logo" className="h-[20px] w-[70px] m-2" /> }
-             </Link>
-        </div>
+        <Navbar/>
         </div>
       </div>
     );

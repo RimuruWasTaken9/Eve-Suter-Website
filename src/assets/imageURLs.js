@@ -42,9 +42,10 @@ export const seasonalImages = [
 
 
 export const contactImages = {
-    logo: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241795/contact_mbazpt.jpg",
-    sideImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
-    }
+    sideImage: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241795/contact_mbazpt.jpg",
+    logo: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
+    instagram: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737837348/instagram_wac3ec.png",    
+}
 
 export const homeImages = {
     logo: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg",
