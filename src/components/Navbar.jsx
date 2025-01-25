@@ -24,22 +24,22 @@ function Navbar() {
              </Link> }
              
              {location.pathname === "/Winter" ? <img src={buttonImages.winterButtonB}  alt="Logo" className="mt-7 mb-7 h-[20px] w-[70px]" /> :
-             <Link to="/Works" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.winterButtonB)} onMouseOut={e => (e.target.src = buttonImages.winterButtonA)}>
+             <Link to="/Winter" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.winterButtonB)} onMouseOut={e => (e.target.src = buttonImages.winterButtonA)}>
              {<img src={buttonImages.winterButtonA}  alt="Logo" className="h-[20px] w-[70px] " /> }
              </Link> }
 
              {location.pathname === "/Spring" ? <img src={buttonImages.springButtonB}  alt="Logo" className="mt-7 mb-7 h-[20px] w-[70px]" /> :
-             <Link to="/Works" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.springButtonB)} onMouseOut={e => (e.target.src = buttonImages.springButtonA)}>
+             <Link to="/Spring" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.springButtonB)} onMouseOut={e => (e.target.src = buttonImages.springButtonA)}>
              {<img src={buttonImages.springButtonA}  alt="Logo" className="h-[20px] w-[70px] " /> }
              </Link> }
 
              {location.pathname === "/Summer" ? <img src={buttonImages.summerButtonB}  alt="Logo" className="mt-7 mb-7 h-[20px] w-[70px]" /> :
-             <Link to="/Home2" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
+             <Link to="/Summer" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
              {<img src={buttonImages.summerButtonA}  alt="Logo" className="h-[20px] w-[70px] " /> }
              </Link>  }
 
              {location.pathname === "/Fall" ? <img src={buttonImages.fallButtonB}  alt="Logo" className="mt-7 mb-7 h-[20px] w-[70px]" /> :
-             <Link to="/Works" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
+             <Link to="/Fall" className="mt-7 mb-7" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
              {<img src={buttonImages.fallButtonA}  alt="Logo" className=" h-[20px]" /> }
              </Link> }
 
