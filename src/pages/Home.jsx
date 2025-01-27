@@ -22,19 +22,19 @@ function Home() {
              {<img src={buttonImages.profileButtonA} height={30} alt="Logo" className="logo" /> }
              </Link> 
        
-             <Link to="/Works" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.winterButtonB)} onMouseOut={e => (e.target.src = buttonImages.winterButtonA)}>
+             <Link to="/Winter" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.winterButtonB)} onMouseOut={e => (e.target.src = buttonImages.winterButtonA)}>
              {<img src={buttonImages.winterButtonA} height={30} alt="Logo" className="logo" /> }
              </Link> 
 
-             <Link to="/Works" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.springButtonB)} onMouseOut={e => (e.target.src = buttonImages.springButtonA)}>
+             <Link to="/Spring" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.springButtonB)} onMouseOut={e => (e.target.src = buttonImages.springButtonA)}>
              {<img src={buttonImages.springButtonA} height={30} alt="Logo" className="logo" /> }
              </Link> 
 
-             <Link to="/Works" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
+             <Link to="/Summer" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.summerButtonB)} onMouseOut={e => (e.target.src = buttonImages.summerButtonA)}>
              {<img src={buttonImages.summerButtonA} height={30} alt="Logo" className="logo" /> }
              </Link>
 
-             <Link to="/Home2" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
+             <Link to="/Fall" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.fallButtonB)} onMouseOut={e => (e.target.src = buttonImages.fallButtonA)}>
              {<img src={buttonImages.fallButtonA} height={30} alt="Logo" className="logo" /> }
              </Link>  
 

@@ -110,3 +110,7 @@ export const buttonImages = {
     pictureButtonA: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_sq_a_lww01q.jpg",
     pictureButtonB: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_sq_b_upvvoh.jpg",
 }
+export const squareButtons = {
+    unselected: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_sq_a_lww01q.jpg",
+    selected: "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737670667/btn_sq_b_upvvoh.jpg",
+}
