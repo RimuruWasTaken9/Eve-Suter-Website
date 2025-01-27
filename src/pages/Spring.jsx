@@ -1,13 +1,21 @@
 import { springImages } from "@/assets/imageURLs";
+import CreateSeason from "@/components/createSeason";
 import Navbar  from "@/components/Navbar";
 
 function Spring() {
     return (
-        <div className="flex flex-col mt-7 min-h-screen content-center items-center max-w-375"> 
-        <img src={springImages.spring1}  alt="Logo" className="w-max h-max" />
-        <Navbar/>
-        </div>
+    <div className="flex flex-col m-3 min-h-screen content-center items-center ">
+        <div>
+     <CreateSeason 
+    logo={springImages.logoWOText}
+    img1={springImages.spring1}
+    img2={springImages.spring2}
+    img3={springImages.spring3}
+    img4={springImages.spring4} />
+    <Navbar />
+    </div> 
+    </div>
     );
-};
+}
 
 export default Spring;

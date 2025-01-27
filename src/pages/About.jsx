@@ -4,8 +4,8 @@ import { profileImages } from "../assets/imageURLs.js";
 function About() {
     return (
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
-        <div >
-          <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-7 pb-6 self-start" />
+        <div className="w-[717.99px]">
+          <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-9 pb-8 self-start" />
         
         <div className="mt-1 grid grid-cols-[350px_1fr] gap-25">
           <div className="">
@@ -34,7 +34,10 @@ function About() {
           </div>
         <img src={profileImages.profileImage}  alt="Logo" className="w-max h-max" />
         </div>
-        <Navbar/>
+        <div className="pt-15">
+        <Navbar />
+        </div>
+        
         </div>
       </div>
     );

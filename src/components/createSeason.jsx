@@ -12,7 +12,7 @@ function CreateSeason(props) {
     }
 
     return (
-        <div className="flex flex-col m-3 min-h-screen">
+        <div className="flex flex-col m-3">
         <div className="block left-0 pl-0.5 pt-5 pb-3">
         <img src={props.logo} />
         </div>

@@ -4,8 +4,8 @@ import  Navbar  from "@/components/Navbar";
 function Contact() {
     return (
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
-        <div >
-          <img src={contactImages.logo}  alt="Logo" className="w-max pt-1 h-max self-start" />
+        <div className="w-[717.99px]">
+          <img src={contactImages.logo}  alt="Logo" className="w-max pt-5 h-max self-start" />
         
         <div className="mt-1 grid grid-cols-[300px_1fr] gap-25">
           <div className="text-start self-center">
@@ -17,7 +17,10 @@ function Contact() {
           </div>
         <img src={contactImages.sideImage}  alt="Logo" className="w-max h-max" />
         </div>
+        <div className="pt-13.75">
         <Navbar/>
+        </div>
+        
         </div>
       </div>
       

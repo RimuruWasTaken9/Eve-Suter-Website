@@ -12,7 +12,7 @@ function Navbar() {
     const location = useLocation();
     
     return (
-        <div className="pt-5 pl-3 grid grid-cols-7 min-w-[525px]">
+        <div className=" pl-3 grid grid-cols-7 min-w-[525px]">
             
              <Link to="/" className="mt-7 mb-7 " onMouseOver={e => (e.target.src = buttonImages.homeButtonB)} onMouseOut={e => (e.target.src = buttonImages.homeButtonA)}>
              {<img src={buttonImages.homeButtonA}  alt="Logo" className="h-[20px] w-[70px]"/> }
