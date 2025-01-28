@@ -9,6 +9,8 @@ function Home() {
 
 
     return (
+      <div className="block min-h-[673px] min-w-[600px] shrink">
+
         <div className="flex  flex-col mt-10 min-h-screen content-center items-center ">
   
         <div className="mt-1 grid grid-cols-[5fr_6fr]">
@@ -45,6 +47,8 @@ function Home() {
           </div>
           <img src={homeImages.sideImage} height={600} alt="Side Image" className="w-max h-max" />
         </div>
+        
+      </div>
       </div>
     );
   }
