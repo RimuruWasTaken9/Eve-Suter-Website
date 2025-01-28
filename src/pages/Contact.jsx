@@ -3,6 +3,8 @@ import  Navbar  from "@/components/Navbar";
 
 function Contact() {
     return (
+      <div className="block min-h-[673px] min-w-[750px] shrink">
+
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
         <div className="w-[717.99px]">
           <img src={contactImages.logo}  alt="Logo" className="w-max pt-5 h-max self-start" />
@@ -20,7 +22,7 @@ function Contact() {
         <div className="pt-13.75">
         <Navbar/>
         </div>
-        
+        </div>
         </div>
       </div>
       

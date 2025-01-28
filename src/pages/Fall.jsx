@@ -4,6 +4,8 @@ import Navbar  from "@/components/Navbar";
 
 function Fall() {
     return (
+        
+    <div className="block min-h-[673px] min-w-[830px] shrink">
     <div className="flex flex-col m-3 min-h-screen content-center items-center ">
         <div>
      <CreateSeason 
@@ -14,6 +16,7 @@ function Fall() {
     img4={fallImages.fall4} />
     <Navbar className=""/>
     </div> 
+    </div>
     </div>
     );
 }

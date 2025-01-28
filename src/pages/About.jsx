@@ -3,6 +3,8 @@ import { profileImages } from "../assets/imageURLs.js";
 
 function About() {
     return (
+      <div className="block min-h-[673px] min-w-[750px] shrink">
+
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
         <div className="w-[717.99px]">
           <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-9 pb-8 self-start" />
@@ -37,7 +39,7 @@ function About() {
         <div className="pt-15">
         <Navbar />
         </div>
-        
+        </div>
         </div>
       </div>
     );

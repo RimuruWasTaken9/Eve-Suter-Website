@@ -9,6 +9,7 @@ function Home() {
 
 
     return (
+      // this first div is getting removed once I start updating, for every SINGLE page.
       <div className="block min-h-[673px] min-w-[600px] shrink">
 
         <div className="flex  flex-col mt-10 min-h-screen content-center items-center ">

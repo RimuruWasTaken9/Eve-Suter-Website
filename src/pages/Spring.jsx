@@ -4,6 +4,7 @@ import Navbar  from "@/components/Navbar";
 
 function Spring() {
     return (
+        <div className="block min-h-[673px] min-w-[830px] shrink">
     <div className="flex flex-col m-3 min-h-screen content-center items-center ">
         <div>
      <CreateSeason 
@@ -14,6 +15,7 @@ function Spring() {
     img4={springImages.spring4} />
     <Navbar />
     </div> 
+    </div>
     </div>
     );
 }
