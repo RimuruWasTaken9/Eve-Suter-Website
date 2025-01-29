@@ -11,14 +11,14 @@ function About() {
         
         <div className="mt-1 grid grid-cols-[350px_1fr] gap-25">
           <div className="">
-            <p className="text-yellow-700">About Eve:</p>
+            <p className="text-yellow-700 py-1">About Eve:</p>
             
-            <p className="text-zinc-500">Swiss-born Eve Suter graduated with honors from the <br /> Lullier Horticulture School in
+            <p className="text-zinc-500 py-1 ">Swiss-born Eve Suter graduated with honors from the <br /> Lullier Horticulture School in
               <span className="text-yellow-700"> Geneva</span>. She followed the <br />
                three-year program with a two-year Swiss apprenticeship <br /> as a flower design.
               </p>
 
-            <p className="text-zinc-500">In 1991, Eve traveled to Japan where she met Mami Kawasaki,<br />
+            <p className="text-zinc-500 py-1">In 1991, Eve traveled to Japan where she met Mami Kawasaki,<br />
               the founder of the Mami Flower Design School in <span className="text-yellow-700"> Tokyo</span>.<br />
               She became an instructor at the school and lived in Japan for<br /> 
               seven years. During her stay, Eve participated in floral <br />
@@ -26,10 +26,10 @@ function About() {
               was published in a variety of books and magazines.
               </p>
 
-            <p className="text-zinc-500">Eve has had solo exhibitions of her work in Japan, Switzerland,<br />
+            <p className="text-zinc-500 py-1">Eve has had solo exhibitions of her work in Japan, Switzerland,<br />
              and the United States.</p>
 
-            <p className="text-zinc-500">She currently lives in <span className="text-yellow-700"> New York </span>City.<br />
+            <p className="text-zinc-500 py-1">She currently lives in <span className="text-yellow-700"> New York </span>City.<br />
              She works with corporate and private clients,<br />
             does event and sculptural design, and teaches.
                </p>
