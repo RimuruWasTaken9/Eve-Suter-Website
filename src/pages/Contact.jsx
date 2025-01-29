@@ -15,7 +15,7 @@ function Contact() {
             <p className="text-zinc-500">new york city</p>
             <p className="text-zinc-500">917. 836. 9718</p>
             <p className="text-zinc-500">eve@evesuter.com</p>
-            <a><img src={contactImages.instagram} alt="instagram logo" className="mt-7 w-10 h-10" /></a>
+            <a href="https://www.instagram.com/evesuterdesign/"><img src={contactImages.instagram} alt="instagram logo" className="mt-7 w-10 h-10" /></a>
           </div>
         <img src={contactImages.sideImage}  alt="Logo" className="w-max h-max" />
         </div>
