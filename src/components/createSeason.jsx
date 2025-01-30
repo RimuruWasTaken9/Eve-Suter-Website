@@ -2,6 +2,7 @@ import { buttonImages } from "@/assets/imageURLs";
 import { useState } from "react";
 import IMGButtons from "./IMGButtons";
 import Autoplay from "embla-carousel-autoplay";
+import { Link } from "react-router-dom";
 
 import {
     Carousel,
@@ -24,7 +25,9 @@ function CreateSeason(props) {
     return (
         <div className="flex flex-col m-3">
         <div className="block left-0 pl-0.5 pt-5 pb-3">
-        <img src={props.logo} />
+            <Link to="/">
+                <img src={props.logo} />
+            </Link>
         </div>
         <div className="flex flex-col">
             <Carousel

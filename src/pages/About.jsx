@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { profileImages } from "../assets/imageURLs.js";
+import { Link } from "react-router-dom";
 
 function About() {
     return (
@@ -7,8 +8,10 @@ function About() {
 
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
         <div className="w-[717.99px]">
-          <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-9 pb-8 self-start" />
-        
+          <Link to="/">
+            <img src={profileImages.nameImage}  alt="Logo" className="w-max h-max pt-9 pb-8 self-start" />
+          </Link>
+          
         <div className="mt-1 grid grid-cols-[350px_1fr] gap-25">
           <div className="">
             <p className="text-yellow-700 py-1">About Eve:</p>

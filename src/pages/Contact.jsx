@@ -1,5 +1,6 @@
 import { contactImages } from "../assets/imageURLs.js";
 import  Navbar  from "@/components/Navbar";
+import { Link } from "react-router-dom";
 
 function Contact() {
     return (
@@ -7,8 +8,9 @@ function Contact() {
 
       <div className="flex flex-col m-3 min-h-screen content-center items-center">
         <div className="w-[717.99px]">
-          <img src={contactImages.logo}  alt="Logo" className="w-max pt-5 h-max self-start" />
-        
+          <Link to="/">
+            <img src={contactImages.logo}  alt="Logo" className="w-max pt-5 h-max self-start" />
+          </Link>
         <div className="mt-1 grid grid-cols-[300px_1fr] gap-25">
           <div className="text-start self-center">
             <p className="text-zinc-500">eve suter design</p>

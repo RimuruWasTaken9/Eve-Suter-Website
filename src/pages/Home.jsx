@@ -17,8 +17,9 @@ function Home() {
         <div className="mt-1 grid grid-cols-[5fr_6fr]">
           <div>
             <div>
-             
-              <img src={homeImages.logo} height={95} alt="Logo" className="pb-10" />
+             <Link to="/">
+                <img src={homeImages.logo} height={95} alt="Logo" className="pb-10" />
+             </Link>
             </div>
             <div className="mt-15 text-gray-600 w-70 ">
              <Link to="/About" className="mt-10 mb-10 block" onMouseOver={e => (e.target.src = buttonImages.profileButtonB)} onMouseOut={e => (e.target.src = buttonImages.profileButtonA)}>
