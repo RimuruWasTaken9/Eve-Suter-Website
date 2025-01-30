@@ -1,6 +1,16 @@
 import { buttonImages } from "@/assets/imageURLs";
 import { useState } from "react";
 import IMGButtons from "./IMGButtons";
+import Autoplay from "embla-carousel-autoplay";
+
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+  } from "@/components/ui/carousel"
+  
 
 function CreateSeason(props) {
     const images = [props.img1, props.img2, props.img3, props.img4];
@@ -16,8 +26,33 @@ function CreateSeason(props) {
         <div className="block left-0 pl-0.5 pt-5 pb-3">
         <img src={props.logo} />
         </div>
-        <div className="block">
-        <img src={IMG} />
+        <div className="flex flex-col">
+            <Carousel
+            opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 4000,
+                }),
+              ]}
+              >
+            <CarouselContent>
+                <CarouselItem><img src={props.img1} /></CarouselItem>
+                <CarouselItem><img src={props.img2} /></CarouselItem>
+                <CarouselItem><img src={props.img3} /></CarouselItem>
+                <CarouselItem><img src={props.img4} /></CarouselItem>
+            </CarouselContent>
+            <div className="absolute top-1/2 left-1/5 flex items-center justify-center">
+                <CarouselPrevious className="relative left-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
+            </div>
+            <div className="absolute top-1/2 right-1/5 flex items-center justify-center">
+                <CarouselNext className="relative right-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
+            </div>
+            </Carousel>
+
+        
         </div>
         <div className="block">
         <IMGButtons onChecked={changeIMG} />
