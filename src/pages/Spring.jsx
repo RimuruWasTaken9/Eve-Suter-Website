@@ -13,8 +13,9 @@ function Spring() {
     img2={springImages.spring2}
     img3={springImages.spring3}
     img4={springImages.spring4} />
-    <Navbar />
-    </div> 
+    
+    </div>
+    <Navbar /> 
     </div>
     </div>
     );

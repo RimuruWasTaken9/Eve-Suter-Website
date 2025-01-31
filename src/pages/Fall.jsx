@@ -14,8 +14,11 @@ function Fall() {
     img2={fallImages.fall2}
     img3={fallImages.fall3}
     img4={fallImages.fall4} />
-    <Navbar className=""/>
     </div> 
+   
+
+    <Navbar className=""/>
+    
     </div>
     </div>
     );

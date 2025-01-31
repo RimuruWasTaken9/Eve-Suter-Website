@@ -14,9 +14,9 @@ function Summer() {
     img2={summerImages.summer2}
     img3={summerImages.summer3}
     img4={summerImages.summer4} />
-    <Navbar />
     </div> 
     
+    <Navbar />
     </div>
     </div>
     );
