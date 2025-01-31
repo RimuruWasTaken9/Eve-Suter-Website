@@ -10,17 +10,14 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
+    CarouselDots,
   } from "@/components/ui/carousel"
+import { scale } from "@cloudinary/url-gen/actions/resize";
   
 
 function CreateSeason(props) {
     const images = [props.img1, props.img2, props.img3, props.img4];
-
-    const [IMG , setIMG] = useState(images[0]);
-
-    function changeIMG(imgID) {
-        setIMG(() => {return images[imgID];});
-    }
+    
 
     return (
         <div className="flex flex-col m-3">
@@ -53,15 +50,17 @@ function CreateSeason(props) {
             <div className="absolute top-1/2 right-1/5 flex items-center justify-center">
                 <CarouselNext className="relative right-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
             </div>
+            <CarouselDots className="p-4"/>
             </Carousel>
 
         
         </div>
-        <div className="block">
-        <IMGButtons onChecked={changeIMG} />
+      
+        
+      
         </div>
-        </div>
+       
     );
   }
-
+  
   export default CreateSeason;
