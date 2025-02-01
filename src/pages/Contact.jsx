@@ -21,7 +21,7 @@ function Contact() {
           </div>
         <img src={contactImages.sideImage}  alt="Logo" className="w-max h-max" />
         </div>
-        <div className="pt-13.75">
+        <div className="pt-5">
         <Navbar/>
         </div>
         </div>

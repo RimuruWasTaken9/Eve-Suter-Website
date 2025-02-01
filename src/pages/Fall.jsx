@@ -17,7 +17,7 @@ function Fall() {
     </div> 
    
 
-    <Navbar className=""/>
+    <Navbar/>
     
     </div>
     </div>
