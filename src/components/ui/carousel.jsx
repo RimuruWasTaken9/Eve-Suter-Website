@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import Autoplay from "embla-carousel-autoplay"
 
 const CarouselContext = React.createContext(null)
 
@@ -32,7 +33,10 @@ const Carousel = React.forwardRef((
   const [carouselRef, api] = useEmblaCarousel({
     ...opts,
     axis: orientation === "horizontal" ? "x" : "y",
-  }, plugins)
+  }, [Autoplay({
+    delay: 5000,
+    stopOnInteraction: false,
+})])
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(false)
 
@@ -225,7 +229,7 @@ const CarouselDots = React.forwardRef((props, ref) => {
                 : 'bg-gray-300 hover:bg-gray-300'
             }`}
             aria-label={`Go to slide ${i + 1}`}
-            onClick={() => api?.scrollTo(i)}
+            onClick={() => {api?.scrollTo(i); api.plugins().autoplay.reset();}}
           />
         ))}
       </div>

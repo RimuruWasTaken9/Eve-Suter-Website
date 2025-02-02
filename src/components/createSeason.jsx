@@ -8,7 +8,7 @@ import {
     CarouselNext,
     CarouselPrevious,
     CarouselDots,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 import { scale } from "@cloudinary/url-gen/actions/resize";
 
 
@@ -29,14 +29,6 @@ function CreateSeason(props) {
                         align: "start",
                         loop: true,
                     }}
-                    plugins={[
-                        Autoplay({
-                            delay: 4000,
-                            stopOnMouseEnter: true,
-                            pauseOnHover: true,
-                            stopOnInteraction: false,
-                        }),
-                    ]}
                 >
                     <CarouselContent>
                         <CarouselItem><img src={props.img1} /></CarouselItem>
@@ -44,13 +36,8 @@ function CreateSeason(props) {
                         <CarouselItem><img src={props.img3} /></CarouselItem>
                         <CarouselItem><img src={props.img4} /></CarouselItem>
                     </CarouselContent>
-                    <div className="absolute top-1/2 left-1/5 flex items-center justify-center">
-                        <CarouselPrevious className="relative left-0 translate-x-0 hover:translate-x-0 hover:scale-125" />
-                    </div>
-                    <div className="absolute top-1/2 right-1/5 flex items-center justify-center">
-                        <CarouselNext className="relative right-0 translate-x-0 hover:translate-x-0 hover:scale-125" />
-                    </div>
-                    <CarouselDots className="p-4" />
+                   
+                    <CarouselDots className="p-4"/>
                 </Carousel>
         </div>
 
