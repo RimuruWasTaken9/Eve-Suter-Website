@@ -18,10 +18,13 @@ function CreateSeason(props) {
 
     return (
         <div className="flex flex-col m-3">
-            
-            <Link to="/" className="pl-0.5 pt-5 pb-3">
+            <div className="pl-0.5 pt-5 pb-3">
+            <Link to="/" className="float-left w-fit inline-block">
                 <img src={props.logo} />
             </Link>
+
+            </div>
+          
             
                 
                 <Carousel
