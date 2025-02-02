@@ -1,6 +1,3 @@
-import { buttonImages } from "@/assets/imageURLs";
-import { useState } from "react";
-import IMGButtons from "./IMGButtons";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
 
@@ -55,11 +52,6 @@ function CreateSeason(props) {
                     </div>
                     <CarouselDots className="p-4" />
                 </Carousel>
-
-
-
-
-
         </div>
 
     );

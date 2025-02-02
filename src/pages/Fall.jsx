@@ -1,6 +1,6 @@
 import { fallImages } from "@/assets/imageURLs";
-import CreateSeason from "../components/CreateSeason";
-import Navbar  from "../components/Navbar";
+import CreateSeason from "../components/CreateSeason.jsx";
+import Navbar  from "../components/Navbar.jsx";
 
 function Fall() {
     return (
