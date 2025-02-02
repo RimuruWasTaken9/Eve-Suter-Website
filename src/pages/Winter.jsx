@@ -1,6 +1,6 @@
 import { winterImages } from "@/assets/imageURLs";
-import CreateSeason from "@/components/CreateSeason";
-import Navbar from "@/components/Navbar";
+import CreateSeason from "../components/CreateSeason";
+import Navbar from "../components/Navbar";
 
 
 function Winter() {
