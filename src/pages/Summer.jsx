@@ -1,5 +1,5 @@
 import { summerImages } from "@/assets/imageURLs";
-import CreateSeason from "@/components/createSeason";
+import CreateSeason from "@/components/CreateSeason";
 import Navbar  from "@/components/Navbar";
 
 function Summer() {

@@ -35,11 +35,14 @@ function CreateSeason(props) {
                     plugins={[
                         Autoplay({
                             delay: 4000,
+                            stopOnMouseEnter: true,
+                            pauseOnHover: true,
+                            stopOnInteraction: false,
                         }),
                     ]}
                 >
                     <CarouselContent>
-                        <CarouselItem><div><img src={props.img1} /></div></CarouselItem>
+                        <CarouselItem><img src={props.img1} /></CarouselItem>
                         <CarouselItem><img src={props.img2} /></CarouselItem>
                         <CarouselItem><img src={props.img3} /></CarouselItem>
                         <CarouselItem><img src={props.img4} /></CarouselItem>

@@ -1,6 +1,6 @@
 import {  buttonImages } from "../assets/imageURLs.js";
 import { Link, useLocation } from "react-router-dom";
-import CreateLink from "./createLink.jsx";
+import CreateLink from "./CreateLink.jsx";
 /*
 if you are reading this future me, I'm sorry. 
 Unlike other times I could tell this sucked 
