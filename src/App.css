@@ -1,7 +1,7 @@
 
 
 /* only for updated code */
-/*
+
 .textButton-container {
   margin-top: var(--margin-3xl);
   color: var(--gray70);
@@ -38,4 +38,5 @@ a p{
 
 a:hover p{
   --underline-width: 100%;
-} */
+  color: var(--colorb);
+} 
