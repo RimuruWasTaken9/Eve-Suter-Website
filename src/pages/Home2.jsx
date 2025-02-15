@@ -3,6 +3,16 @@ import { seasonalImages, homeImages } from "../assets/imageURLs.js";
 import { Link, NavLink } from "react-router-dom";
 import "../index.css";
 
+/*
+New home page layout idea:
+All of the seasonal images are now on the same slide
+dividing into 4 different sections as carousels automatically scrolling left
+if the user hovers over a carousel, it stops.
+if the user hovers over an image in the carousel, it slightly enlarges the image
+if the user then clicks on that image, it enlarges even more and covers most of the screen
+
+ESTIMATED TIME: 2-3 hours total
+*/
 
 function Home() {
 
