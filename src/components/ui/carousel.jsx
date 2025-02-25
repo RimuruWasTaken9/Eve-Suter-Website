@@ -5,6 +5,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import Autoplay from "embla-carousel-autoplay"
+import { useLocation } from "react-router-dom"
+import AutoScroll from "embla-carousel-auto-scroll"
 
 const CarouselContext = React.createContext(null)
 
@@ -30,13 +32,20 @@ const Carousel = React.forwardRef((
   },
   ref
 ) => {
+  const location = useLocation()
   const [carouselRef, api] = useEmblaCarousel({
     ...opts,
     axis: orientation === "horizontal" ? "x" : "y",
-  }, [Autoplay({
+  }, [location.pathname === "/Home2" ? AutoScroll({
+    speed: 2,
+    stopOnInteraction: false,
+    
+  })
+  : Autoplay({
     delay: 5000,
     stopOnInteraction: false,
-})])
+}) 
+])
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(false)
 
@@ -229,7 +238,7 @@ const CarouselDots = React.forwardRef((props, ref) => {
                 : 'bg-gray-300 hover:bg-gray-300'
             }`}
             aria-label={`Go to slide ${i + 1}`}
-            onClick={() => {api?.scrollTo(i); api.plugins().autoplay.reset();}}
+            onClick={() => {api?.scrollTo(i); location.pathname === "/Home2" ? api.plugins().AutoScroll.reset(): api.plugins().autoplay.reset() ;}}
           />
         ))}
       </div>

@@ -1,6 +1,7 @@
 import { color } from "@cloudinary/url-gen/qualifiers/background";
 import { seasonalImages, homeImages } from "../assets/imageURLs.js";
 import { Link, NavLink } from "react-router-dom";
+import NewCarousel from "@/components/NewCarousel.jsx";
 import "../index.css";
 
 /*
@@ -14,39 +15,40 @@ if the user then clicks on that image, it enlarges even more and covers most of 
 ESTIMATED TIME: 2-3 hours total
 */
 
-function Home() {
+function Home2() {
 
     const logoIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_logo_w1gh4k.jpg";
     const logoWOTextIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg";
     const sideIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg";
     return (
-        <div className="flex flex-col mt-7 min-h-screen content-center items-center max-w-375">
-  
-        <div className="mt-1 grid grid-cols-[5fr_6fr]">
-          <div>
-            <div>
-              <img src={homeImages.logo} height={95} alt="Logo" className="logo" />
+      <div  className="flex flex-col mt-7 min-h-screen max-w-375">
+            <Link to="/" className="float-left w-fit inline-block">
+                <img src={homeImages.logoWOText} />
+            </Link>
+            
+            {seasonalImages.map((group, groupIndex) => (
+            <div key={groupIndex} className="mb-10">
+            <h4 className=" pt-5 pb-5 text-gray-600 text-left pl-6">{group.title}</h4>
+            <div className="">
+            <NewCarousel 
+            key={groupIndex}
+            photos={seasonalImages[groupIndex].images} 
+            directionid={groupIndex}/>
+            {/* {group.images.map((url, index) => (
+            <img
+            key={index}
+            src={url}
+            alt={`Artwork ${groupIndex + 1}-${index + 1}`}
+            className="w-48 h-auto rounded-lg shadow-lg"
+            />
+            ))} */}
             </div>
-            <div className="textButton-container mt-15 text-gray-600">
-             <Link to="/About" className="pageLink" ><p>profile</p></Link> 
+     </div>
+            ))}
+</div>
+      
        
-
-              <Link to="/Works" className="pageLink" ><p>winter</p></Link> 
-
-              <Link to="/Works" className="pageLink" ><p>spring</p></Link> 
-
-              <Link to="/Works" className="pageLink" ><p>summer</p></Link> 
-
-              <Link to="/Works" className="pageLink" ><p>fall</p></Link> 
-
-              <Link to="/Contact" className="pageLink" ><p>contact</p></Link> 
-              
-            </div>  
-          </div>
-          <img src={homeImages.sideImage} height={600} alt="Side Image" className="sideImage" />
-        </div>
-      </div>
     );
   }
   
-  export default Home;
+  export default Home2;

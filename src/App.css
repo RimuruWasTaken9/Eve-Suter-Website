@@ -4,7 +4,7 @@
 
 .textButton-container {
   margin-top: var(--margin-3xl);
-  color: var(--gray70);
+  color: var(--colorb);
 }
 
 .textButton-container a {
