@@ -38,7 +38,10 @@ const Carousel = React.forwardRef((
     axis: orientation === "horizontal" ? "x" : "y",
   }, [location.pathname === "/Home2" ? AutoScroll({
     speed: 2,
+    stopOnMouseEnter: true,
     stopOnInteraction: false,
+    startDelay: 10,
+    direction: props.directionid % 2 == 0 ? "forward" : "backward",
     
   })
   : Autoplay({
