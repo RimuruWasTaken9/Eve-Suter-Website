@@ -1,5 +1,5 @@
 import { color } from "@cloudinary/url-gen/qualifiers/background";
-import { buttonImages, homeImages } from "../assets/imageURLs.js";
+import { homeImages } from "../assets/imageURLs.js";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import "../index.css";

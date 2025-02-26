@@ -1,5 +1,5 @@
 import { color } from "@cloudinary/url-gen/qualifiers/background";
-import { seasonalImages, homeImages } from "../assets/imageURLs.js";
+import { seasonalImagesTesting, homeImages } from "../assets/imageURLs.js";
 import { Link, NavLink } from "react-router-dom";
 import NewCarousel from "@/components/NewCarousel.jsx";
 import "../index.css";
@@ -26,13 +26,13 @@ function Home2() {
                 <img src={homeImages.logoWOText} />
             </Link>
             
-            {seasonalImages.map((group, groupIndex) => (
+            {seasonalImagesTesting.map((group, groupIndex) => (
             <div key={groupIndex} className="mb-10">
             <h4 className=" pt-5 pb-5 text-gray-600 text-left pl-6">{group.title}</h4>
             <div className="">
             <NewCarousel 
             key={groupIndex}
-            photos={seasonalImages[groupIndex].images} 
+            photos={seasonalImagesTesting[groupIndex].images} 
             directionid={groupIndex}/>
             {/* {group.images.map((url, index) => (
             <img
