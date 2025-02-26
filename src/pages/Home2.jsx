@@ -21,7 +21,7 @@ function Home2() {
     const logoWOTextIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241785/logo_jx2asg.jpg";
     const sideIMG = "https://res.cloudinary.com/dpbsgzrho/image/upload/v1737241786/top_drln6x.jpg";
     return (
-      <div  className="flex flex-col mt-7 min-h-screen max-w-375">
+      <div  className="flex flex-col mt-7">
             <Link to="/" className="float-left w-fit inline-block">
                 <img src={homeImages.logoWOText} />
             </Link>
