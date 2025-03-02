@@ -36,7 +36,7 @@ const Carousel = React.forwardRef((
   const [carouselRef, api] = useEmblaCarousel({
     ...opts,
     axis: orientation === "horizontal" ? "x" : "y",
-  }, [location.pathname === "/Home2" ? AutoScroll({
+  }, [location.pathname === "/home2" ? AutoScroll({
     speed: 2,
     stopOnMouseEnter: true,
     stopOnInteraction: false,
@@ -155,7 +155,7 @@ const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
       role="group"
       aria-roledescription="slide"
       className={cn(
-        location.pathname === "/Home2" ?
+        location.pathname === "/home2" ?
         "min-w-0 shrink-0 grow-0 flex justify-center  " :
         "min-w-0 shrink-0 grow-0 flex justify-center basis-full ",
         orientation === "horizontal" ? "pl-4" : "pt-4",
@@ -243,7 +243,7 @@ const CarouselDots = React.forwardRef((props, ref) => {
                 : 'bg-gray-300 hover:bg-gray-300'
             }`}
             aria-label={`Go to slide ${i + 1}`}
-            onClick={() => {api?.scrollTo(i); location.pathname === "/Home2" ? api.plugins().AutoScroll.reset(): api.plugins().autoplay.reset() ;}}
+            onClick={() => {api?.scrollTo(i); location.pathname === "/home2" ? api.plugins().AutoScroll.reset(): api.plugins().autoplay.reset() ;}}
           />
         ))}
       </div>
